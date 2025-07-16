@@ -4,3 +4,5 @@ const person = {
 }
 
 module.exports.singlePerson = person
+
+//Este archivo es el entrypoint del proyecto de node
