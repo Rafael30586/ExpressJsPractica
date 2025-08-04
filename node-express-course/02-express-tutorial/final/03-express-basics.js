@@ -10,8 +10,8 @@ app.get('/about', (req, res) => {
   res.status(200).send('About Page')
 })
 
-app.all('*', (req, res) => {
-  res.status(404).send('<h1>resource not found</h1>')
+app.all('*', (req, res) => { // Sirve para los errores porque aplica para todas las urls diferentes a las anteriores. Para que funcione así debe escribirse después...
+  res.status(404).send('<h1>resource not found</h1>')//... de los otros métodos (como en este caso)
 })
 
 app.listen(5000, () => {
