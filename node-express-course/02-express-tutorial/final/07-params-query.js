@@ -33,7 +33,7 @@ app.get('/api/products/:productID/reviews/:reviewID', (req, res) => {
   res.send('hello world')
 })
 
-app.get('/api/v1/query', (req, res) => {
+app.get('/api/v1/query', (req, res) => { // Este endpoint permite trabajar con parámetros con ?, pore ejemplo .../api/v1/query?search=albany
   // console.log(req.query)
   const { search, limit } = req.query
   let sortedProducts = [...products]
